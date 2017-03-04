@@ -9,7 +9,7 @@
             <span class="site-title">{{site.title}}</span>
         </h1>
         
-        <div class="about" style="color:white;">
+        <div class="about">
         	えっちな絵を描いたりゲームを作ったりします。
         </div>
         
@@ -25,18 +25,18 @@
         </div>
 
         <ul class="recent">
-            <p>Recent posts:</p>
+            <p>最近の投稿</p>
              {% for post in site.posts limit:3%}
                 <li>
                     <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+                        <h2 class="post-title" itemprop="name">{{ post.title }} {{ post.date | date_to_string }}</h2>
                     </a>
                 </li>
               {% endfor %}
         </ul>
 
         <ul class="recent">
-            <p>Recent projects:</p>
+            <p>制作物</p>
              {% for project in site.projects limit:3%}
                 <li>
                     <a title="Show my recent project" href="{{ project.url}}">

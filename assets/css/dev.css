@@ -1,0 +1,31 @@
+body {
+	height: 100%;
+	width: 95%;
+	background-color: #223;
+	color: white;
+	text-align: center;
+}
+
+p {
+	text-align: left;
+}
+
+.recent {
+	text-align: center;
+	width:450px;
+}
+
+.header-site {
+	text-align: center;
+}
+
+.person img {
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	margin-bottom: 80px;
+}
+
+.about {
+	color: #ddd;
+}
