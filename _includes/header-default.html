@@ -27,7 +27,7 @@
             <p>最近の投稿</p>
              {% for post in site.posts limit:3%}
                 <li>
-                    <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
+                    <a title="recentpost" href="{{ post.url | prepend: site.baseurl }}">
                         <h2 class="post-title" itemprop="name">{{ post.title }} {{ post.date | date_to_string }}</h2>
                     </a>
                 </li>

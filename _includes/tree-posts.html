@@ -6,8 +6,8 @@
 
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
-            <a title="Open the post" href="{{ post.url | prepend: site.baseurl }}">
-                <h2 class="post-title" itemprop="name">{{ post.title | replace: ' ','-'}}.md</h2>
+            <a title="post" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title" itemprop="name">{{ post.title }} {{ post.date | date_to_string }}</h2>
             </a>
         </div>
     </article>
