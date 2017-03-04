@@ -23,8 +23,7 @@
             	<img src="/assets/img/pixiv.png">
             </a>
         </div>
-
-        <ul class="recent">
+        <div class="recent">
             <p>最近の投稿</p>
              {% for post in site.posts limit:3%}
                 <li>
@@ -33,9 +32,9 @@
                     </a>
                 </li>
               {% endfor %}
-        </ul>
+        </div>
 
-        <ul class="recent">
+        <div class="recent">
             <p>制作物</p>
              {% for project in site.projects limit:3%}
                 <li>
@@ -44,7 +43,7 @@
                     </a>
                 </li>
               {% endfor %}
-        </ul>
+        </di>
 
     </div>
 </header>

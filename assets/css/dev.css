@@ -1,9 +1,40 @@
 body {
-	height: 100%;
-	width: 95%;
-	background-color: #223;
-	color: white;
+	background-color: #2A3356;
+	color: #E8E2E2;
 	text-align: center;
+	width: 450px;
+	margin: 0 auto;  
+}
+
+li {
+	position: relative;
+	list-style:none;
+}
+
+h1 {
+	color: #FDFCFC;
+}
+
+h2 {
+	border-style: dotted; 
+	font-size: 120%;
+}
+
+h2:hover {
+	border-style: solid; 
+}
+
+a {
+	text-decoration:none; 
+	color: #F35B25;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: #F35B25;
 }
 
 p {
@@ -11,21 +42,37 @@ p {
 }
 
 .recent {
+	position: relative;
+	margin: 0 10%;
 	text-align: center;
-	width:450px;
 }
 
 .header-site {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.header-post {
+	height: 40px;
 	text-align: center;
 }
 
 .person img {
+	position: relative;
 	width: 130px;
 	height: 130px;
 	border-radius: 100%;
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 }
 
-.about {
-	color: #ddd;
+.post {
+
 }
+
+footer {
+	height: 40px;
+	position: absolute;
+	bottom: 40px;
+	text-align: center;
+}
+
